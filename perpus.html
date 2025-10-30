@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Sistem Perpustakaan Ekkipp</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Poppins:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>📚Library Ekky</h1>
+
+    <div class="container">
+      <h2>➕ Tambah / Edit Buku</h2>
+      <input type="text" id="judul" placeholder="✨ Judul Buku..." />
+      <input type="text" id="penulis" placeholder="✍️ Nama Penulis..." />
+      <input type="number" id="stok" placeholder="📦 Jumlah Stok..." />
+      <button id="btnTambah" onclick="tambahBuku()">Tambah</button>
+      <button id="btnUpdate" onclick="updateBuku()" style="display: none">
+        Update
+      </button>
+      <div style="margin-top: 50px">
+        <h2>👥 Tambah / Edit Anggota</h2>
+        <input type="text" id="namaAnggota" placeholder="👤 Nama Anggota..." />
+        <input
+          type="text"
+          id="nimAnggota"
+          placeholder="🆔 NIM / ID Anggota..."
+        />
+        <button id="btnTambahAnggota" onclick="tambahAnggota()">
+          Tambah Anggota
+        </button>
+        <button
+          id="btnUpdateAnggota"
+          onclick="updateAnggota()"
+          style="display: none"
+        >
+          Update Anggota
+        </button>
+
+        <h2>📋 Daftar Anggota</h2>
+        <input
+          type="text"
+          id="cariAnggota"
+          class="search-box"
+          placeholder="🔍 Cari anggota..."
+          onkeyup="cariAnggota()"
+        />
+
+        <table id="tabelAnggota">
+          <thead>
+            <tr>
+              <th>No</th>
+              <th>Nama</th>
+              <th>NIM / ID</th>
+              <th>Aksi</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+
+    <h2>📖 Daftar Buku</h2>
+
+    <input
+      type="text"
+      id="cari"
+      class="search-box"
+      placeholder="🔍 Cari buku..."
+      onkeyup="cariBuku()"
+    />
+
+    <table id="tabelBuku">
+      <thead>
+        <tr>
+          <th>No</th>
+          <th>Judul</th>
+          <th>Penulis</th>
+          <th>Stok</th>
+          <th>Aksi</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+
+    <script src="script.js"></script>
+  </body>
+</html>

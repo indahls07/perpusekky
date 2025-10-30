@@ -1,0 +1,124 @@
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 20px;
+  background: linear-gradient(135deg, #ffe6f0, #ffd6eb);
+}
+h1 {
+  text-align: center;
+  font-family: "Dancing Script", cursive;
+  font-size: 3rem;
+  color: #b83265;
+  margin-bottom: 15px;
+  text-shadow: 2px 2px 4px rgba(184, 50, 101, 0.2);
+}
+h2 {
+  font-size: 1.4rem;
+  color: #e75480;
+  border-left: 5px solid #ff80ab;
+  padding-left: 10px;
+  margin-top: 25px;
+  font-weight: 600;
+}
+.container {
+  max-width: 850px;
+  margin: auto;
+  background: #fff0f6;
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0 6px 16px rgba(184, 50, 101, 0.25);
+}
+input,
+button {
+  padding: 12px;
+  margin: 7px 0;
+  width: 100%;
+  border: 1px solid #f5c6d8;
+  border-radius: 10px;
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+}
+input:focus {
+  outline: none;
+  border-color: #ff80ab;
+  box-shadow: 0 0 8px rgba(255, 128, 171, 0.5);
+}
+button {
+  background: #ff80ab;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  letter-spacing: 1px;
+  transition: 0.3s;
+}
+button:hover {
+  background: #e75480;
+  transform: scale(1.03);
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+  font-size: 14px;
+}
+th,
+td {
+  border: 1px solid #f8c1d9;
+  padding: 10px;
+  text-align: center;
+}
+th {
+  background: #ffb6c1;
+  color: #fff;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+td {
+  color: #333;
+}
+.aksi-btn {
+  display: flex;
+  gap: 6px;
+  justify-content: center;
+}
+.edit {
+  background: #f9a8d4;
+  font-size: 13px;
+}
+.edit:hover {
+  background: #ec4899;
+}
+.hapus {
+  background: #f87171;
+  font-size: 13px;
+}
+.hapus:hover {
+  background: #dc2626;
+}
+.pinjam {
+  background: #60a5fa;
+  font-size: 13px;
+}
+.pinjam:hover {
+  background: #2563eb;
+}
+.kembali {
+  background: #34d399;
+  font-size: 13px;
+}
+.kembali:hover {
+  background: #059669;
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+tr.animate {
+  animation: fadeInUp 0.6s ease;
+}
